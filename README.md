@@ -2,11 +2,13 @@
 
 **从考点，到真题。** 将 2009—2026 年的 408 真题放在同一面可交互的试卷墙上：每列一年，每格一道题，点选考点即可同时定位历年的对应题目。
 
-**[打开在线真题墙 →](https://storm-crypto.github.io/408-wall/)** · [下载 HTML 离线使用](https://github.com/storm-crypto/408-wall/raw/refs/heads/main/index.html)
+**[打开在线真题墙 →](https://storm-crypto.github.io/408-wall/)** · [备用网站](https://wall-408-kaoyan.copperzebra5.chatgpt.site) · [下载 HTML 离线使用](https://github.com/storm-crypto/408-wall/raw/refs/heads/main/index.html)
 
 覆盖数据结构、计算机组成原理、操作系统、计算机网络四科，当前收录 **18 年 · 845 道独立真题 · 113 个考点**。
 
-![四科同屏的历年试卷墙](output/playwright/01-overview.png)
+总览以跨年份对比为主：桌面保留紧凑的 18 年并排布局，选中考点后，命中题格高亮、其他题目淡化，一眼看出哪些年份考过。目录和正文使用更清晰的字体与文字对比；点进原题后使用较大字号，代码保留等宽字体与缩进。
+
+![当前版本：18 年并排的历年试卷墙](output/playwright/01-overview.jpg)
 
 ## 为什么用真题墙？
 
@@ -20,7 +22,7 @@
 
 | 功能 | 可以做什么 |
 | --- | --- |
-| 历年试卷墙 | 四科同屏或按科目筛选；按年份并排查看原卷题号，悬停预览题干摘要 |
+| 历年试卷墙 | 四科同屏或按科目筛选；桌面紧凑展示 18 年，按原卷题号高亮匹配题目，悬停预览摘要 |
 | 考点目录 | 按科目、章节、考点浏览；显示对应题量，点选后高亮匹配题目 |
 | 搜索与组合筛选 | 搜索考点、题干或 `2026-41` 这样的年份题号；筛选选择题、综合应用题及最近 5 年／10 年 |
 | 题目清单 | 按年份从近到远展示摘要；点选年份进一步筛选，支持加载更多题目 |
@@ -31,19 +33,21 @@
 
 ## 界面预览
 
+以下四张截图均更新于 **2026-10-23**，对应当前版本。
+
 ### 选中考点，历年对应题目同时亮起
 
 以 **Cache** 为例，当前收录 14 道题、覆盖 11 年。高亮题格保留年份和原卷题号，方便观察分布并打开原题。
 
 [在线体验 Cache 筛选 →](https://storm-crypto.github.io/408-wall/#subject=co&topic=co-3-50338b3b)
 
-![Cache 考点跨年份高亮](output/playwright/02-cache-filter.png)
+![Cache 考点跨年份高亮](output/playwright/02-cache-filter.jpg)
 
 ### 切换清单，集中比较题干
 
 同一筛选条件下切换到「题目清单」，可以先浏览题干摘要，再选择需要练习的题目。顶部年份标签支持继续缩小范围。
 
-![Cache 对应真题清单与年份筛选](output/playwright/03-question-list.png)
+![Cache 对应真题清单与年份筛选](output/playwright/03-question-list.jpg)
 
 ### 展开原题，保留配图与阅读上下文
 
@@ -51,7 +55,7 @@
 
 [打开示例原题 →](https://storm-crypto.github.io/408-wall/#q=2025-42)
 
-![2025 年第 42 题的原题阅读面板](output/playwright/04-question-reader.png)
+![2025 年第 42 题的原题阅读面板](output/playwright/04-question-reader.jpg)
 
 ## 怎么用来复习？
 
@@ -81,6 +85,6 @@
 
 ## 离线使用与更新
 
-下载 [index.html](https://github.com/storm-crypto/408-wall/raw/refs/heads/main/index.html)，用浏览器打开即可。题干、配图、样式与交互脚本已包含在单个文件中。文件约 22 MB，在线首次加载需要下载该文件。
+下载 [index.html](https://github.com/storm-crypto/408-wall/raw/refs/heads/main/index.html)，用浏览器打开即可。题干、配图、样式与交互脚本已包含在单个文件中。文件约 23 MB，在线首次加载需要下载该文件。
 
-本仓库通过 GitHub Pages 发布。更新时替换根目录的 `index.html`，提交并推送到 `main`，网站会自动部署；更新收录内容后，也应同步 README 的统计和截图。
+本仓库通过 GitHub Pages 发布。更新时替换根目录的 `index.html`，提交并推送到 `main`，网站会自动部署；发布完成后核对 Pages 部署状态与线上页面。界面变更应同步更新本页截图；收录内容变更还应核对统计。
